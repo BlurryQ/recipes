@@ -3,10 +3,11 @@ Making Recipes with Odin
 
 This project is creating a HTML page displaying a few recipes, showing the use of:
 
--Titles
--Headings
--Lists
--Formatting (Emphasis & Strong)
--Images
--Links (Absolute & Relative)
+<ul>
+	<li>Titles</li>
+	<li>Headings</li>
+	<li>Lists</li>
+	<li>Formatting (Emphasis & Strong)</li>
+	<li>Images</li>
+	<li>Links (Absolute & Relative)</li>
 
