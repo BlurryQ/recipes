@@ -1,0 +1,12 @@
+* {
+    background-color: antiquewhite;
+}
+
+img {
+        height: auto;
+        width: 250px;
+}
+
+ol {
+        list-style: none;
+}
