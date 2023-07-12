@@ -1,7 +1,6 @@
 * {
         background-color: rgb(233, 192, 139); 
         border-width: 5px;
-        /*border: red solid 3px;*/
 }
 
 h1 {
@@ -79,5 +78,6 @@ h1 {
         border-radius: 5px;
         border: #974c2e;  
         border-style: dashed;
+        border-width: 5px;
         padding: 10px 20px 5px 10px;
 }
