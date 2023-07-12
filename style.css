@@ -1,5 +1,7 @@
 * {
-    background-color: rgb(233, 192, 139); 
+        background-color: rgb(233, 192, 139); 
+        border-width: 5px;
+        /*border: red solid 3px;*/
 }
 
 h1 {
@@ -8,12 +10,16 @@ h1 {
         font-family: 'Aclonica';
 }
 
-.ingredients-title,
-.method-title {
-        text-decoration: underline;
-        font-family: 'Aclonica'; 
-        font-size: 20px;   
-        text-indent: 25px; 
+.icon {
+        border-style: none;
+        width: 50px;
+}
+
+.home.recipe-card {
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        border-style: solid;
 }
 
 .recipe-card img {
@@ -34,26 +40,17 @@ h1 {
         font-family: 'Aclonica';
 }
 
-.home.recipe-card {
-        float: left;
-        text-align: center;
-        border-style: solid;
-}
-
 .recipe.recipe-card {
         text-align: left;
 }
 
-.icon {
-        border-style: none;
-        width: 50px;
-}
-
-.method-step {
-        background: #b67b37;
-        border-radius: 5px;
-        border: #974c2e;  
-        border-style: dashed;
+.ingredients-title,
+.method-title {
+        text-decoration: underline;
+        font-family: 'Aclonica'; 
+        font-size: 20px;   
+        margin-left: 25px;
+        margin-top: 50px; 
 }
 
 .ingredients-header,
@@ -61,15 +58,26 @@ h1 {
         font-weight: bold;
         text-decoration: underline; 
         font-size: 18px; 
-        text-indent: 50px;
+        margin-left: 50px;
 }
 
 .ingredients-header {
         font-family: 'Aclonica'; 
+        padding: 20px 20px 5px 20px;
 }
 
 .ingredients-list {
         border-color: #97662e;
         border-style: solid;
         border-radius: 5px;
+        display: inline-block;
+        padding: 10px 20px 5px 10px;
+}
+
+.method-step {
+        background: #c08c51;
+        border-radius: 5px;
+        border: #974c2e;  
+        border-style: dashed;
+        padding: 10px 20px 5px 10px;
 }
