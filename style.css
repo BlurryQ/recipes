@@ -49,8 +49,7 @@ h3 {
 .recipe-card {  
         border-color: #97662e;
         border-radius: 5%;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 10px;
         font-size: 18px;
         font-family: 'Aclonica';
 }
@@ -65,11 +64,29 @@ h3 {
         max-width: 1000px;
 }
 
-.recipe.recipe-card {
-        text-align: left;
+.title,
+.top-merge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1000px;
+}
+
+.top-merge {
+        justify-content: space-around;
+        flex-wrap: wrap;
 }
 
 /* Ingredient Classes */
+
+.ingredients-inline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 300px;
+        flex-wrap: wrap;
+}
 
 .ingredients-title,
 .method-title {
@@ -77,26 +94,31 @@ h3 {
         font-family: 'Aclonica'; 
         font-size: 20px;   
         margin-left: 25px;
-        margin-top: 50px; 
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1000px;
+
 }
 
 .ingredients {
-
         border: 5px solid #97662e;
         display: flex;
         flex-wrap: wrap;
         max-width: max-content;
         align-items: flex-start;
+        justify-content: center;
 }
 
 .ingredients-header {
         display: flex;
         flex-wrap: wrap;
-
         flex-direction: column;
         margin: 15px;
         border: 3px dotted #974c2e;
         padding: 15px;
+        min-height: 300px;
 }   
 
 
@@ -123,3 +145,4 @@ h3 {
         border: 5px dashed #974c2e;  
         padding: 10px 20px 5px 10px;
 }
+
