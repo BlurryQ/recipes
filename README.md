@@ -11,3 +11,4 @@ This project is creating a HTML page displaying a few recipes, showing the use o
 	<li>Images</li>
 	<li>Links (Absolute & Relative)</li>
 
+This has developed to include CSS and the use of flex
