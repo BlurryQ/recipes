@@ -21,6 +21,12 @@ h3 {
         padding-bottom: 10px;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 /* Home Classes */
 
 .home.recipe-card {
