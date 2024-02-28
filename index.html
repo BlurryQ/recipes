@@ -1,52 +1,138 @@
 <!DOCTYPE html>
-    <html lang="en">
-
-        <head>
-            <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Aclonica'>
-            <meta charset="utf-8">
-            <Title>Recipes | Home</Title>
-            <link rel="stylesheet" href="style.css">
-        </head>
-
-       <body>
-            <h1>Recipes</h1>
-            <div class="all-recipes">
-                <div class="home recipe-card"><a href="recipes/baileys-cheesecake.html">Bailey's Cheesecake</a>
-                <p><a href="recipes/baileys-cheesecake.html"><img src="./images/baileys-cheesecake.webp" alt="Bailey's Cheesecake"></a></p></div>
-
-                <div class="home recipe-card"><a href="recipes/banana-rum-tea-cake.html">Banana Rum & Walnut Tea Cake</a>
-                <p><a href="recipes/banana-rum-tea-cake.html"><img src="./images/banana-rum-tea-cake.webp" alt="Banana Rum & Walnut Tea Cake"></a></p></div>
-
-                <div class="home recipe-card"><a href="recipes/battenberg-cake.html">Battenberg Cake</a>
-                <p><a href="recipes/battenberg-cake.html"><img src="./images/battenberg-cake.webp" alt="Battenberg Cake"></a></p></div>
-
-                <div class="home recipe-card"><a href="recipes/cheese-scones.html">Cheese Scones</a>
-                <p><a href="recipes/cheese-scones.html"><img src="./images/cheese-scones.webp" alt="Cheese Scones"></a></p></div>
-    
-                <div class="home recipe-card"><a href="recipes/chocolate-baileys-cake.html">Chocolate Bailey's Cake</a>
-                <p><a href="recipes/chocolate-baileys-cake.html"><img src="./images/chocolate-baileys-cake.jpg" alt="Chocolate Bailey's Cake"></a></p></div>
-
-                <div class="home recipe-card"><a href="recipes/cinnamon-churros.html">Cinnamon Churros</a>
-                <p><a href="recipes/cinnamon-churros.html"><img src="images/cinnamon-churros.webp" alt="Cinnamon Churros"></a></p></div>
-
-                <div class="home recipe-card"><a href="recipe/coconut-macaroons.html">Coconut Macaroon</a>
-                <p><a href="recipes/coconut-macaroons.html"><img src="images/coconut-macaroons.webp" alt="Coconut Macaroons"></a></p></div>
-
-                <div class="home recipe-card"><a href="recipes/lemon-tart.html">Lemon Tart</a>
-                <p><a href="recipes/lemon-tart.html"><img src="./images/lemon-tart.webp" alt="Lemon Tart"></a></p></div>
-
-                <div class="home recipe-card"><a href="recipes/peaches-cheesecake-bar.html">Peaches & Cream Cheesecake Bars</a>
-                <p><a href="recipes/peaches-cheesecake-bar.html"><img src="images/peaches-cheesecake-bar.webp" alt="Peaches & Cream Cheesecake Bars"></a></p></div>
-
-                <div class="home recipe-card"><a href="recipes/strawberry-cheesecake-loaf.html">Strawberry Cheesecake Loaf</a>
-                <p><a href="recipes/strawberry-cheesecake-loaf.html"><img src="images/strawberry-cheesecake-loaf.webp"></a></p></div>
-
-                <div class="home recipe-card"><a href="recipes/sweet-scones.html">Sweet Scones</a>
-                <p><a href="recipes/sweet-scones.html"><img src="./images/sweet-scones.jpg" alt="Sweet Scones"></a></p></div>               
-                  
-                <div class="home recipe-card"><a href="recipes/vegan-katsu-curry.html">Vegan Katsu Curry</a>
-                <p><a href="recipes/vegan-katsu-curry.html"><img src="./images/vegan-katsu-curry.webp" alt="Vegan Katsu Curry"></a></p></div>   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Agbalumo&display=swap');
+        </style>
+    <script src="script.js" defer></script>
+    <title>Soma's | Home</title>
+</head>
+<body>
+    <div class="header bold-font">
+        <div class="header-top">
+            <a href="#" class="search-icon"></a>
+            <input type="text" id="search">
+            <div class="header-top-right">
+                <a href="#" class="notifications-icon"></a>
+                <div class="sml sml-user"></div>
+                <div class="username">El Dobe-ablo</div>
+                <div id="toggle-theme"></div>
             </div>
-        </body>
+        </div>
+        <div class="header-bottom">
+            <div class="user"></div>
+            <div class="greeting">Hi there,</div>
+            <div class="greeting-username">El Dobe-ablo (@dobeablo)</div>
+            <div class="add-content">
+                <a href="#" class="new">New</a>
+                <a href="#" class="upload">Upload</a>
+                <a href="#" class="share">Share</a>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar bold-font">
+        <a href="#" class="dashboard-icon" id="dashboard-icon"></a>
+        <a href="#" class="dashboard" id="dashboard">Dashboard</a>
+        <div class="sidebar-top">
+            <a href="#" class="home-icon icon" id="home-icon"></a>
+            <a href="#" class="home" id="home">Home</a>
+            <a href="#" class="profile-icon icon" id="profile-icon"></a>
+            <a href="#" class="profile" id="profile">Profile</a>
+            <a href="#" class="messages-icon icon" id="messages-icon"></a>
+            <a href="#" class="messages" id="messages">Messages</a>
+            <a href="#" class="history-icon icon" id="history-icon"></a>
+            <a href="#" class="history" id="history">History</a>
+            <a href="#" class="tasks-icon icon" id="tasks-icon"></a>
+            <a href="#" class="tasks" id="tasks">Tasks</a>
+            <a href="#" class="communities-icon icon" id="communities-icon"></a>
+            <a href="#" class="communities" id="communities">Communities</a>
+        </div>
+        <div class="sidebar-bottom">
+            <a href="#" class="settings-icon icon" id="settings-icon"></a>
+            <a href="#" class="settings" id="settings">Settings</a>
+            <a href="#" class="support-icon icon" id="support-icon"></a>
+            <a href="#" class="support" id="support">Support</a>
+            <a href="#" class="privacy-icon icon" id="privacy-icon"></a>
+            <a href="#" class="privacy" id="privacy">Privacy</a>
+        </div>
+    </div>
 
-    </html>
+    <div class="container">
+        <div class="projects-header bold-font">Your Recipes</div>
+        <div class="content">
+            <div class="content-block" id="block-1">
+                <a href="./recipes/baileys-cheesecake.html" class="content-header bold-font">Bailey's Cheesecake</a>
+                <img class="card-image" src="./images/baileys-cheesecake.webp" alt="Bailey's Cheesecake">
+                <div class="content-text" id="block-1-content">A tasty Bailey's cheesecake</div>
+            </div>
+            <div class="content-block" id="block-2">
+                <a href="./recipes/baileys-cheesecake.html" class="content-header bold-font">Bailey's Cheesecake</a>
+                <img class="card-image" src="./images/baileys-cheesecake.webp" alt="Bailey's Cheesecake">
+                <div class="content-text" id="block-1-content">A tasty Bailey's cheesecake</div>
+            </div>
+            <div class="content-block" id="block-3">
+                <a href="./recipes/baileys-cheesecake.html" class="content-header bold-font">Bailey's Cheesecake</a>
+                <img class="card-image" src="./images/baileys-cheesecake.webp" alt="Bailey's Cheesecake">
+                <div class="content-text" id="block-1-content">A tasty Bailey's cheesecake</div>
+            </div>
+            <div class="content-block" id="block-4">
+                <a href="./recipes/baileys-cheesecake.html" class="content-header bold-font">Bailey's Cheesecake</a>
+                <img class="card-image" src="./images/baileys-cheesecake.webp" alt="Bailey's Cheesecake">
+                <div class="content-text" id="block-1-content">A tasty Bailey's cheesecake</div>
+            </div>
+            <div class="content-block" id="block-5">
+                <a href="./recipes/baileys-cheesecake.html" class="content-header bold-font">Bailey's Cheesecake</a>
+                <img class="card-image" src="./images/baileys-cheesecake.webp" alt="Bailey's Cheesecake">
+                <div class="content-text" id="block-1-content">A tasty Bailey's cheesecake</div>
+            </div>
+            <div class="content-block" id="block-6">
+                <a href="./recipes/baileys-cheesecake.html" class="content-header bold-font">Bailey's Cheesecake</a>
+                <img class="card-image" src="./images/baileys-cheesecake.webp" alt="Bailey's Cheesecake">
+                <div class="content-text" id="block-1-content">A tasty Bailey's cheesecake</div>
+            </div>
+        </div>
+        <div class="announcements-header bold-font">Announcements</div>
+            <div class="announcements">
+                <div class="announcement-1">
+                    <a href="#" class="announcement-1-header bold-font">Doggo Tings 1</a>
+                    <div class="announcement-1-content">Doggo ipsum i am bekom fat vvv fat boi big ol pupper.</div>
+                </div>
+                <div class="announcement-2">
+                    <a href="#" class="announcement-2-header bold-font">Doggo Tings 2</a>
+                    <div class="announcement-2-content">Puggo very hand that feed shibe ruff length boy heckin angery woofer he made many woofs.</div>
+                </div>
+                <div class="announcement-3">
+                    <a href="#" class="announcement-3-header bold-font">Doggo Tings 3</a>
+                    <div class="announcement-3-content">Extremely cuuuuuute ur givin me a spook much ruin diet very good spot, woofer. boof wow very biscit.</div>
+                </div>
+            </div>
+            <div class="trending-header bold-font">Trending</div>
+            <div class="trending">
+                <a href="#" class="sml user-1"></a>
+                <div class="user1-info">
+                    <a href="#" class="trending-user bold-font"><div class="at">@</div>newffie</a>
+                    <div class="user-tag">The Big Woofer</div>
+                </div>
+                <a href="#" class="sml user-2"></a>
+                <div class="user2-info">
+                    <a href="#" class="trending-user bold-font"><div class="at">@</div>rottie</a>
+                    <div class="user-tag">The Rotterdam Prince</div>
+                </div>
+                <a href="#" class="sml user-3"></a>
+                <div class="user3-info">
+                    <a href="#" class="trending-user bold-font"><div class="at">@</div>bigwoof</a>
+                    <div class="user-tag">Defo Dog Woof</div>
+                </div>
+                <a href="#" class="sml user-4"></a>
+                <div class="user4-info">
+                    <a href="#" class="trending-user bold-font"><div class="at">@</div>dutch-hound</a>
+                    <div class="user-tag">Smol and Mighty</div>
+                </div>
+            </div>
+    </div>
+
+</body>
+</html>
